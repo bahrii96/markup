@@ -1,0 +1,52 @@
+.menu {
+  background-color: #777777;
+}
+.menu__list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  // &:nth-child(1) {
+  //   margin-left: 40px;
+  // }
+}
+.menu__item {
+  position: relative;
+  margin: 25px 25px;
+  ::after {
+    position: absolute;
+    content: "";
+    // left: 25px;
+    // right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    margin-left: 25px;
+    height: 30px;
+    width: 3px;
+    background-color: rgb(255, 255, 255);
+  }
+  &:nth-child(1) {
+    margin-left: 40px;
+  }
+  &:nth-child(5) {
+    margin-right: 0px;
+    ::after {
+      display: none;
+    }
+  }
+}
+.menu__link {
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  font-size: 30px;
+}
+
+.menu__item:hover .menu__link::before {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  height: 1.5px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
