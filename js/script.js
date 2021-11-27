@@ -15,3 +15,19 @@ $(document).ready(function () {
         
     });
 })
+const buttonOpen =document.querySelector(".header__button")
+const overlay = document.querySelector(".form__overlay")
+const buttonClose = document.querySelector(".form__button--close")
+
+buttonOpen.addEventListener("click", openWindowForm)
+buttonClose.addEventListener("click", closeWindowForm)
+function openWindowForm(event) {
+   overlay.classList.add("active")
+}
+function closeWindowForm(event) {
+    overlay.classList.remove("active")
+    
+}
+console.log(overlay);
+console.log(buttonOpen);
+document.getElementById('focusmeplease').focus();
