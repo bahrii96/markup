@@ -102,13 +102,17 @@
   border: none;
   cursor: pointer;
 }
-
+.category__item {
+  margin-left: 20px;
+  list-style: disc;
+  color: var(--primary-text-color);
+}
 .catogory__link {
   font-family: "PT Sans";
   color: var(--primary-text-color);
   line-height: 1.63;
   font-size: 13px;
-  margin-left: 20px;
+
   list-style: disc;
   &:focus {
     color: black;
