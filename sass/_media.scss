@@ -90,6 +90,11 @@
     }
   }
   @media screen and (max-width: 600px) {
+    .header__button {
+      &::before {
+        display: none;
+      }
+    }
     .product__item {
       max-width: 180px;
     }
@@ -131,7 +136,7 @@
   }
   .form {
     width: 350px;
-    width: 400px;
+    height: 400px;
   }
   .form__field .form__input {
     width: 320px;
@@ -142,12 +147,12 @@
   //   margin-bottom: 10px;
   // }
   .form__text {
-    font-size: 16px;
+    font-size: 15px;
   }
   .form__title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
   }
 
   .form {
@@ -181,23 +186,11 @@
   .header__button {
     line-height: 1.117;
     font-size: 18px;
-    &::before {
-      display: none;
-    }
   }
 
   // .form__field {
   //   margin-bottom: 7px;
   // }
-  .form__text {
-    margin-bottom: 7px;
-    font-size: 15px;
-  }
-  .form__title {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    font-size: 18px;
-  }
 
   .form {
     top: 14px;
