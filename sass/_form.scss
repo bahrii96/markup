@@ -59,7 +59,8 @@
   height: 40px;
   padding: 12px 42px;
 
-  margin-left: 41px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -147,5 +148,34 @@
   opacity: 1;
   transform: translateX(0);
   position: fixed;
+
   // z-index: 4;
 }
+
+// .form__input:required:valid {
+//   border-color: green;
+// }
+// .form__input:required:invalid {
+//   border-color: red;
+// }
+input:invalid {
+  background-color: #f9e3d0;
+}
+
+form:invalid .form__button {
+  // border: 5px solid ;
+  background-color: #f9e3d0;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid .form__button {
+  background-color: #ddffdd;
+}
+
+// input:required {
+//   border-color: #800000;
+//   border-width: 3px;
+// }

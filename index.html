@@ -76,37 +76,38 @@
           <ul class="content__list">
             <li class="content__item"><a href="" class="content__link">Главная</a> </li>
             <li class="content__item"><a href="" class="content__link">Каталог</a> </li>
-            <li class="content__item"><a href="" class="content__link" id="focusmeplease">Бытовая техника</a> </li>
+            <li class="content__item"><a href="" class="content__link"  >Бытовая техника</a> </li>
           </ul>
           <div class="content__box">
             <div class="content__box-menu">
               <ul class="menu-content">
-                <li class="menu-content__item"> <a href="" class="menu-content__link">Автомобили</a></li>
-                <li class="menu-content__item"> <a href="" class="menu-content__link"  "> Бытовая техника</a>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link ">Автомобили</a></li>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link " > Бытовая техника</a>
                  
                   <ul class="category__list">
-                    <li class="category__item"> <a href="" class="catogory__link">Микроволновки</a></li>
-                    <li class="category__item"> <a href="" class="catogory__link">Холодильники</a></li>
-                    <li class="category__item"> <a href="" class="catogory__link">Посудомоечные машины</a>
+                    <li class="category__item"> <a href="#n" class="catogory__link  "  >Микроволновки</a></li>
+                    <li class="category__item"> <a href="#n" class="catogory__link">Холодильники</a></li>
+                    <li class="category__item"> <a href="#n" class="catogory__link">Посудомоечные машины</a>
                       
                     </li>
-                    <li class="category__item"> <a href="" class="catogory__link">Чайники</a></li>
+                    <li class="category__item"> <a href="#n" class="catogory__link">Чайники</a></li>
                   </ul>
                 </li>
-                <li class="menu-content__item"> <a href="" class="menu-content__link">Мобильная техника</a></li>
-                <li class="menu-content__item"> <a href="" class="menu-content__link">Компьютеры</a></li>
-                <li class="menu-content__item"> <a href="" class="menu-content__link">Одежда</a></li>
-                <li class="menu-content__item"> <a href="" class="menu-content__link">Недвижимость</a></li>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link">Мобильная техника</a></li>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link">Компьютеры</a></li>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link">Одежда</a></li>
+                <li class="menu-content__item"> <a href="#n" class="menu-content__link">Недвижимость</a></li>
               </ul>
-
+<a href="./images/exler.png" download="" class="price-list">
               <img
                 src="./images/exler.png"
                 alt="квадрат"
                 height="111"
                 width="97"
+                class="price-list__img"
               />
-              <h2 class="content__price-list">Прайс-лист</h2>
-            </div>
+              <h2 class=" price-list__name">Прайс-лист</h2>
+            </a></div>
             <div class="product-box">
             <ul class=" product__list">
               <li class=" product__item">
@@ -247,18 +248,23 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <ul class="footer__list">
-          <li class="footer__item">© 2012–2013 ЗАО «Компания»</li>
-          <li class="footer__item">info@name.ru</li>
+      <div class="container footer__box">
+        <div class="info-company">
+         <p class="info-company__text">© 2012–2013 ЗАО «Компания»</p>
+          <a href="mail:info@name.ru" class="info-company__link">info@name.ru</a>
+           
+         </div>
+        <ul class="footer-menu">
+          <li class="footer-menu__item"> <a href="" class="footer-menu__link">Главная</a> </li>
+          <li class="footer-menu__item"> <a href="" class="footer-menu__link">Каталог</a> </li>
+          <li class="footer-menu__item"> <a href="" class="footer-menu__link">Доставка и оплата</a> </li>
+          <li class="footer-menu__item"> <a href="" class="footer-menu__link">Прайс-лист</a> </li>
+          <li class="footer-menu__item"> <a href="" class="footer-menu__link">Контакты</a> </li>
         </ul>
-        <ul class="footer__menu">
-          <li class="footer__item">Главная</li>
-          <li class="footer__item">Каталог</li>
-          <li class="footer__item">Доставка и оплата</li>
-          <li class="footer__item">Прайс-лист</li>
-          <li class="footer__item">Контакты</li>
-        </ul>
+        <div class="company">
+          <img src="./images/company.png" alt="логотип" class="company__img" width="36" height="38">
+          <h2 class="company__name"> <span class="company_span">Разработка сайта</span> —  компания «Art-Sites»</h2>
+        </div>
       </div>
     </footer>
     
@@ -267,22 +273,23 @@
 <div class="form__overlay "  >
 <div class="form">
     <h2 class="form__title">Регистрация</h2>
-  <p class="form__text">Заполните форму ниже,и наш менеджер свяжется с Вами</p>
+  <p class="form__text">Заполните форму ниже и наш менеджер свяжется с Вами</p>
  <form class="js-speaker-form">
   <div class="form__field">
-    <input type="text" class="form__input" name="name"   placeholder=" " autocomplete="off"/>
+    <input type="text" class="form__input" name="name"   placeholder=" " required  />
   <label for="name" class="form__label">Имя</label>
  <img src="./images/form/name.svg" alt="" class="icon" width="15px">
    </div>
   <div class="form__field">
-    <input type="tel" class="form__input" name="tel"   placeholder=" "/>
-   <label for="tel" class="form__label">Tелефон</label>
+    <input type="tel"  class="form__input" name="tel" required  placeholder=" "/>
+    <!-- <input type="number"    class="form__input" name="tel"   placeholder=" "/> -->
+    <label for="tel" class="form__label">Tелефон</label>
    <img src="./images/form/tel.svg" alt="" class="icon" width="15px">
    </div>
-<div class="form__field"><input type="email" class="form__input" name="mail"   placeholder=" "/>
+<div class="form__field"><input type="email" class="form__input" name="mail "  required  placeholder=" "/>
    <label for="mail" class="form__label">Почта</label>
    <img src="./images/form/mail.svg" alt="" class="icon" width="15px"></div>
-   <button type="button" class="form__button">Отправить</button>
+   <button type="submit" value="Submit" class="form__button">Отправить</button>
               <button
                 type="button"
                 class=" form__button--close"

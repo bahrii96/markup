@@ -1,3 +1,6 @@
+.slider {
+  background-color: #f8f8f8;
+}
 .slick-list {
   overflow: hidden;
 }
@@ -37,3 +40,7 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+.slider__img {
+  max-width: 1248px;
+}
+// width="1248" height="462"

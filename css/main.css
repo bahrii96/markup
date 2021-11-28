@@ -204,6 +204,10 @@ a {
   background-color: white;
 }
 
+.slider {
+  background-color: #f8f8f8;
+}
+
 .slick-list {
   overflow: hidden;
 }
@@ -249,6 +253,10 @@ a {
   background-repeat: no-repeat;
 }
 
+.slider__img {
+  max-width: 1248px;
+}
+
 .content__list {
   position: relative;
   display: -webkit-box;
@@ -260,15 +268,7 @@ a {
   margin: 10px;
 }
 
-.content__link {
-  font-size: 14px;
-  font-family: "PT Sans";
-  color: var(--primary-text-color);
-  text-decoration: underline;
-  line-height: 1.286;
-}
-
-.content__link::after {
+.content__item::after {
   position: absolute;
   content: "";
   top: 50%;
@@ -280,16 +280,24 @@ a {
   background-color: var(--primary-text-color);
 }
 
+.content__item:nth-child(3)::after {
+  display: none;
+}
+
+.content__link {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: var(--primary-text-color);
+  text-decoration: underline;
+  line-height: 1.286;
+}
+
 .content__link:nth-child(1) {
   margin-left: 0px;
 }
 
-.content__link:nth-child(3) {
+.content__link:nth-child(2) {
   margin-right: 0px;
-}
-
-.content__link:nth-child(3)::after {
-  display: none;
 }
 
 .content__box {
@@ -377,6 +385,11 @@ a {
   list-style: disc;
 }
 
+.catogory__link:focus {
+  color: black;
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
 .menu-content {
   width: 170px;
   margin: 0;
@@ -389,6 +402,23 @@ a {
   color: var(--primary-text-color);
   line-height: 1.667;
   font-size: 18px;
+}
+
+.menu-content__link:focus {
+  border-bottom: 1px solid var(--primary-text-color);
+}
+
+.price-list__name {
+  font-size: 30px;
+  font-family: "PTSans";
+  color: #444444;
+  font-weight: bold;
+  line-height: 0.833;
+}
+
+.price-list__img {
+  display: block;
+  margin-left: 30px;
 }
 
 .numbering {
@@ -434,6 +464,73 @@ a {
   font-family: "PT Sans";
   color: var(--primary-text-color);
   line-height: 1.571;
+}
+
+.footer {
+  background-color: #777777;
+}
+
+.footer__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.info-company__text {
+  font-family: "PT Sans";
+  color: white;
+  line-height: 1.571;
+  font-size: 14px;
+}
+
+.info-company__link {
+  font-family: "PT Sans";
+  color: white;
+  line-height: 1.571;
+  font-size: 14px;
+}
+
+.footer-menu__item {
+  margin-right: 85px;
+}
+
+.footer-menu__link {
+  font-family: "PTSans";
+  color: white;
+  line-height: 1.857;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 190px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.company__name {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: white;
+  line-height: 1.857;
+}
+
+.company__img {
+  margin-top: 5px;
+  margin-right: 9px;
+}
+
+.company_span {
+  text-decoration: underline;
 }
 
 .form__overlay {
@@ -504,7 +601,8 @@ a {
   width: 448px;
   height: 40px;
   padding: 12px 42px;
-  margin-left: 41px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -597,5 +695,21 @@ a {
   -webkit-transform: translateX(0);
           transform: translateX(0);
   position: fixed;
+}
+
+input:invalid {
+  background-color: #f9e3d0;
+}
+
+form:invalid .form__button {
+  background-color: #f9e3d0;
+}
+
+input:valid {
+  background-color: #ddffdd;
+}
+
+form:valid .form__button {
+  background-color: #ddffdd;
 }
 /*# sourceMappingURL=main.css.map */

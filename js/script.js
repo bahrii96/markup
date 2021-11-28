@@ -30,4 +30,4 @@ function closeWindowForm(event) {
 }
 console.log(overlay);
 console.log(buttonOpen);
-document.getElementById('focusmeplease').focus();
+ 

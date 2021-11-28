@@ -1,0 +1,52 @@
+.footer {
+  background-color: #777777;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+.info-company__text {
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.571;
+  font-size: 14px;
+}
+.info-company__link {
+  font-family: "PT Sans";
+  color: rgb(255, 255, 255);
+  line-height: 1.571;
+  font-size: 14px;
+}
+.footer-menu__item {
+  margin-right: 85px;
+}
+.footer-menu__link {
+  font-family: "PTSans";
+  color: rgb(255, 255, 255);
+
+  line-height: 1.857;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+.company {
+  display: flex;
+  max-width: 190px;
+  align-items: flex-start;
+}
+.company__name {
+  font-size: 14px;
+  font-family: "PTSans";
+  color: rgb(255, 255, 255);
+
+  line-height: 1.857;
+}
+.company__img {
+  margin-top: 5px;
+  margin-right: 9px;
+}
+.company_span {
+  text-decoration: underline;
+}
