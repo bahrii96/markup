@@ -10,10 +10,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+.slider__img {
+  width: 100%;
+}
 .slick-track {
   display: flex;
 }
-
+// width="1248" height="462"
 .slider__list .slick-arrow {
   position: absolute;
   top: 50%;
@@ -31,6 +34,7 @@
 
   background-position: center;
   background-size: cover;
+  cursor: pointer;
 }
 .slider__list .slick-arrow.slick-prev {
   left: 140px;
@@ -39,6 +43,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 .slider__img {
   max-width: 1248px;

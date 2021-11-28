@@ -37,6 +37,9 @@
     margin-right: 0px;
   }
 }
+.no-active__link {
+  text-decoration: none;
+}
 .content__box {
   display: flex;
   justify-content: space-between;
@@ -97,6 +100,7 @@
   background-position: center;
   background-size: cover;
   border: none;
+  cursor: pointer;
 }
 
 .catogory__link {
@@ -108,7 +112,6 @@
   list-style: disc;
   &:focus {
     color: black;
-    border-bottom: 1px solid var(--primary-text-color);
   }
 }
 .menu-content {
@@ -122,11 +125,14 @@
   color: var(--primary-text-color);
   line-height: 1.667;
   font-size: 18px;
-  &:focus {
-    border-bottom: 1px solid var(--primary-text-color);
-  }
-}
 
+  // &:focus {
+  //   border-bottom: 1px solid var(--primary-text-color);
+  // }
+}
+.active__link {
+  text-decoration: underline;
+}
 .price-list__name {
   font-size: 30px;
   font-family: "PTSans";
@@ -148,9 +154,19 @@
   line-height: 1.571;
   font-size: 14px;
   margin: 10px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
+}
+.numbering {
+  height: 15px;
+}
+
+.numbering__link:focus {
+  font-size: 17px;
+
+  color: black;
 }
 .content__line {
+  margin-top: 60px;
   border-bottom: 1.5px solid var(--primary-text-color);
   // width: 780px;
 }

@@ -55,7 +55,7 @@
   /* margin-right: auto; */
 }
 .form__field .form__input {
-  width: 448px;
+  width: 438px;
   height: 40px;
   padding: 12px 42px;
 
@@ -120,6 +120,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .form__button--close {
@@ -132,6 +133,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   transition: ease 1s all;
+  cursor: pointer;
 }
 .form__button--close::before {
   content: "";
