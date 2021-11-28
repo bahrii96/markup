@@ -767,20 +767,17 @@ form:valid .form__button {
   .menu__item {
     margin: 10px 4px;
   }
-  .menu__item ::after {
-    margin-left: 4px;
-  }
   .menu__link {
     font-size: 24px;
   }
   .info {
     display: none;
   }
-  .form__field .icon {
-    left: 25px;
+  .menu__item {
+    border-bottom: 1.5px solid white;
   }
-  .form__field .form__label {
-    left: 45px;
+  .menu__item ::after {
+    display: none;
   }
 }
 
@@ -790,9 +787,6 @@ form:valid .form__button {
   }
   .menu__item:nth-child(1) {
     margin-left: 5px;
-  }
-  .menu__item ::after {
-    margin-left: 2px;
   }
   .menu__list {
     -webkit-box-pack: start;
@@ -831,12 +825,12 @@ form:valid .form__button {
   .form__field .form__label {
     left: 40px;
   }
+  .content__item::after {
+    display: none;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  .content__item::after {
-    margin-left: 3px;
-  }
+@media screen and (max-width: 725px) and (max-width: 600px) {
   .product__item {
     max-width: 180px;
   }
@@ -865,6 +859,9 @@ form:valid .form__button {
     margin: 0px;
     margin-right: 10px;
   }
+}
+
+@media screen and (max-width: 725px) {
   .footer__box {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -876,26 +873,20 @@ form:valid .form__button {
     width: 95px;
   }
   .form {
-    max-width: 350px;
-    height: 350px;
+    width: 350px;
+    width: 400px;
   }
   .form__field .form__input {
     width: 320px;
-  }
-  .form__field {
-    margin-bottom: 10px;
+    height: 40px;
   }
   .form__text {
-    margin-bottom: 10px;
     font-size: 16px;
   }
   .form__title {
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: 20px;
-  }
-  .form__field .form__input {
-    padding: 10px;
   }
   .form {
     top: 21px;
@@ -931,11 +922,7 @@ form:valid .form__button {
     font-size: 18px;
   }
   .header__button::before {
-    content: "";
-    top: 20px;
-  }
-  .form__field {
-    margin-bottom: 7px;
+    display: none;
   }
   .form__text {
     margin-bottom: 7px;
@@ -945,9 +932,6 @@ form:valid .form__button {
     padding-top: 7px;
     padding-bottom: 7px;
     font-size: 18px;
-  }
-  .form__field .form__input {
-    padding: 7px;
   }
   .form {
     top: 14px;
@@ -970,10 +954,7 @@ form:valid .form__button {
     font-size: 20px;
   }
   .form {
-    max-width: 320px;
-  }
-  .form__field .form__input {
-    width: 300px;
+    width: 320px;
   }
 }
 /*# sourceMappingURL=main.css.map */
