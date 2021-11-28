@@ -831,6 +831,9 @@ form:valid .form__button {
 }
 
 @media screen and (max-width: 725px) and (max-width: 600px) {
+  .header__button::before {
+    display: none;
+  }
   .product__item {
     max-width: 180px;
   }
@@ -874,19 +877,19 @@ form:valid .form__button {
   }
   .form {
     width: 350px;
-    width: 400px;
+    height: 400px;
   }
   .form__field .form__input {
     width: 320px;
     height: 40px;
   }
   .form__text {
-    font-size: 16px;
+    font-size: 15px;
   }
   .form__title {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    font-size: 18px;
   }
   .form {
     top: 21px;
@@ -919,18 +922,6 @@ form:valid .form__button {
   }
   .header__button {
     line-height: 1.117;
-    font-size: 18px;
-  }
-  .header__button::before {
-    display: none;
-  }
-  .form__text {
-    margin-bottom: 7px;
-    font-size: 15px;
-  }
-  .form__title {
-    padding-top: 7px;
-    padding-bottom: 7px;
     font-size: 18px;
   }
   .form {
